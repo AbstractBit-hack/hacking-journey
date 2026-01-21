@@ -35,10 +35,13 @@ Password:-
 
 **Command Used→**
 
-ssh -i filename bandit14@localhost -p 2220
--i filename (this is the identity flag. Basically it tells the ssh server that this is my key file use it”
+1.Logout from Bandit 13`exit`
 
-Password:- private key required
+2. Download Private Key to Local Machine`scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .`*(Copies the private key file from the Bandit 13 server to your current local directory)*
+
+3. Login to Bandit 14 from Local Machine`chmod 400 sshkey.privatessh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
+
+Password:- 
 
 **Bandit 14-15→**
 
