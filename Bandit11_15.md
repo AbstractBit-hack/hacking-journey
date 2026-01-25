@@ -43,8 +43,27 @@ Password:-
 
 Password:- 
 
-**Bandit 14-15→**
+## **Bandit 14-15**
 
-**Command Used→**
+**Command Used:**
 
-Password:-
+netcat
+
+Command: `nc localhost 30000`
+
+Netcat is utilized for reading and writing data across network connections using TCP or UDP protocols.
+
+**Password:**
+
+
+
+## **Bandit 15-16**
+
+**Command Used:**
+
+Openssl
+
+Command: `openssl s_client -connect localhost:30001`
+
+**Password:**
+
